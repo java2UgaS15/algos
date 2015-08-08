@@ -1,6 +1,6 @@
 public class ReverseList{
 
 	public static void main(String[] args){
-		//put code here.
+		//put code here. Use recursive 
 	}
 }
