@@ -7,7 +7,13 @@
 //123 -> "One Hundred Twenty Three"
 //12345 -> "Twelve Thousand Three Hundred Forty Five"
 //1234567 -> "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
-c class Solution {
+
+//key ideas:
+//1. divide integer into roots: 0, [1, 19], 20, 30, 40, 50, 60, 70, 80, 90
+//2. consider how to get [0,99].
+//3. divide integer by three-digit sub-group.
+//4. use recursion to handle each three-digit subgroup.
+public class Solution {
     public String numberToWords(int num) {
         //The following two groups are like the word-root for counting.
         String[] one2Nineteen = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
